@@ -1,6 +1,8 @@
 <template>
   <div class="menu">
-    <app-button @click="$emit('openModal')">Add post</app-button>
+    <app-button v-if="!hideCreatePost" @click="$emit('openModal')"
+      >Add post</app-button
+    >
     <app-select
       v-model="localeSelectedValue"
       :options="selectOption"
@@ -15,7 +17,9 @@
 
 <script>
 export default {
-  props: {},
+  props: {
+    hideCreatePost: Boolean,
+  },
   data() {
     return {
       selectOption: [

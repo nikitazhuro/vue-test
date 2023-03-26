@@ -1,11 +1,11 @@
 <template>
   <div @click="closeModal" v-if="isOpen" class="modal">
     <div @click.stop class="modal_content">
-      <div>
+      <div class="close">
         <img
           src="../../../public/cross.svg"
-          width="50"
-          height="50"
+          width="40"
+          height="40"
           @click="closeModal"
           alt="cross"
         />
@@ -46,6 +46,15 @@ export default {
   background-color: white;
   width: 600px;
   height: 400px;
-  border: 1px solid rgb(65, 184, 131);
+  border-radius: 5px;
+  padding: 25px;
+}
+.close {
+  display: flex;
+  justify-content: end;
+}
+
+.close img {
+  cursor: pointer;
 }
 </style>

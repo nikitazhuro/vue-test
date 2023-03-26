@@ -7,7 +7,6 @@
         @openModal="openModal"
       ></post-menu>
       <hr />
-      <app-spinner v-if="isLoading"></app-spinner>
       <h1 v-if="!sortedPosts.length && !isLoading">Нет постов</h1>
       <h1 v-if="sortedPosts.length && !isLoading">Список постов:</h1>
       <post-list
@@ -17,6 +16,7 @@
         @deletePost="deletePost"
         :posts="sortedPosts"
       ></post-list>
+      <app-spinner v-if="isLoading"></app-spinner>
       <div v-observer:[observableData]="observableData" class="observer"></div>
     </div>
   </main>
@@ -85,6 +85,8 @@ export default {
         ...post,
         id: lastPostId + 1,
       });
+
+      this.isOpen = false;
     },
     // async fetchPosts() {
     //   try {

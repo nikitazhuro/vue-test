@@ -2,8 +2,9 @@
   <div class="navbar">
     <h2 @click="$router.push('/')" style="cursor: pointer">Logo</h2>
     <div class="navbar_pages">
-      <router-link style="margin-right: 1.5rem" to="/about">About</router-link>
-      <router-link to="/posts">Posts</router-link>
+      <router-link to="/about">About</router-link>
+      <router-link style="margin: 0 1.5rem" to="/posts">Posts</router-link>
+      <router-link to="/postsfromstore">Posts from store</router-link>
     </div>
   </div>
 </template>

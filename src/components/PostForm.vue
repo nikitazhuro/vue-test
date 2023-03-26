@@ -3,12 +3,13 @@
     <h1>Создание поста:</h1>
     <div>
       <app-input
+        v-focus
         v-model="post.title"
         placeholder="Введите заголовок"
       ></app-input>
       <app-input v-model="post.body" placeholder="Введите описание"></app-input>
     </div>
-    <app-button @click="createPost">Create</app-button>
+    <app-button v-observe @click="createPost">Create</app-button>
   </div>
 </template>
 
@@ -40,7 +41,7 @@ export default {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid teal;
+  border: 1px solid rgb(65, 184, 131);
   border-radius: 5px;
   padding: 25px;
 }

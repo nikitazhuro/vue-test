@@ -31,8 +31,8 @@ export default {
 <style scoped>
 .select {
   padding: 5px;
-  border: 1px solid teal;
+  border: 1px solid rgb(65, 184, 131);
   border-radius: 5px;
-  color: teal;
+  color: rgb(65, 184, 131);
 }
 </style>

@@ -16,8 +16,8 @@ export default {
   cursor: pointer;
   background-color: transparent;
   padding: 10px 15px;
-  border: 1px solid teal;
-  color: teal;
+  border: 1px solid rgb(65, 184, 131);
+  color: rgb(65, 184, 131);
   border-radius: 5px;
   align-self: flex-end;
   transition: 0.5s all ease;
@@ -25,6 +25,6 @@ export default {
 
 .button:hover {
   color: white;
-  background-color: teal;
+  background-color: rgb(65, 184, 131);
 }
 </style>

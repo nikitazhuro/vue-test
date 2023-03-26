@@ -46,6 +46,6 @@ export default {
   background-color: white;
   width: 600px;
   height: 400px;
-  border: 1px solid teal;
+  border: 1px solid rgb(65, 184, 131);
 }
 </style>

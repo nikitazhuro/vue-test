@@ -20,7 +20,7 @@ export default {
 <style scoped>
 .input {
   padding: 10px 15px;
-  border: 1px solid teal;
+  border: 1px solid rgb(65, 184, 131);
   width: 100%;
   border-radius: 5px;
   margin-bottom: 1rem;

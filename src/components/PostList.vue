@@ -1,6 +1,5 @@
 <template>
   <div class="posts">
-    <h1>Список постов:</h1>
     <transition-group name="post-list">
       <post-item
         v-for="post of posts"
@@ -9,6 +8,13 @@
         :key="post.id"
       ></post-item>
     </transition-group>
+    <!-- <app-pagination
+      v-if="posts.length"
+      limit="100"
+      pageLimit="10"
+      :currentPage="currentPage"
+      @changeCurrentPage="(page) => $emit('changeCurrentPage', page)"
+    ></app-pagination> -->
   </div>
 </template>
 
@@ -21,6 +27,7 @@ export default {
   },
   props: {
     posts: {},
+    currentPage: Number,
   },
 };
 </script>
@@ -28,6 +35,7 @@ export default {
 <style>
 .posts {
   width: 100%;
+  margin-top: 0.5rem;
   display: flex;
   justify-content: center;
   flex-direction: column;

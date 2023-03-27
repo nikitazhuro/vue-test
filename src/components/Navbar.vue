@@ -5,6 +5,9 @@
       <router-link to="/about">About</router-link>
       <router-link style="margin: 0 1.5rem" to="/posts">Posts</router-link>
       <router-link to="/postsfromstore">Posts from store</router-link>
+      <router-link style="margin-left: 1.5rem" to="/postscomposition"
+        >Posts composition api</router-link
+      >
     </div>
   </div>
 </template>
